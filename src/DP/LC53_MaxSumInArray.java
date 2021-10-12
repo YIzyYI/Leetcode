@@ -5,6 +5,8 @@ public class LC53_MaxSumInArray {
     public int FindGreatestSumOfSubArray(int[] array) {
         int len = array.length;
         int[] dp = new int[len+1];
+        if (len == 1)
+            return array[0];
         int res = Integer.MIN_VALUE;
 
         for(int i = 1; i <= len; i++)
