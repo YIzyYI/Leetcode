@@ -29,9 +29,6 @@ public class ZeroOnePackage {
             }
         }
 
-
-
-
         return dp[N][W];
     }
 }
