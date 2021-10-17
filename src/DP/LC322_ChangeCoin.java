@@ -1,7 +1,7 @@
 package DP;
 
-public class ChangeCoin {
-    public int change(int amount, int[] coins)
+public class LC322_ChangeCoin {
+    public int coinChange(int amount, int[] coins)
     {
         int[] dp = new int[amount + 1];
         for (int i = 0; i < amount + 1; i++)
