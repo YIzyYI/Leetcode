@@ -11,7 +11,7 @@ Easy
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LC111 {
+public class LC111_minDepth {
     public class TreeNode {
         int val;
         TreeNode left;
