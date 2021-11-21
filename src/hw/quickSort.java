@@ -5,16 +5,6 @@ package hw;
  * @author Lvan
  */
 public class quickSort {
-    public static void main(String[] args) {
-        int[] arr = {5, 1, 7, 3, 1, 6, 9, 4};
-
-        quickSort(arr, 0, arr.length - 1);
-
-        for (int i : arr) {
-            System.out.print(i + "\t");
-        }
-    }
-
     /**
      * @param arr        待排序列
      * @param leftIndex  待排序列起始位置
@@ -45,5 +35,15 @@ public class quickSort {
         arr[left] = key;
         quickSort(arr, leftIndex, left - 1);
         quickSort(arr, right + 1, rightIndex);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {5, 1, 7, 3, 1, 6, 9, 4};
+
+        quickSort(arr, 0, arr.length - 1);
+
+        for (int i : arr) {
+            System.out.print(i + "\t");
+        }
     }
 }
